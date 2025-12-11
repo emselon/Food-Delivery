@@ -1,0 +1,413 @@
+/* Wrapper chứa toàn bộ nội dung */
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px; /* tạo khoảng trống cho header */
+}
+
+/* Header cố định trên đầu trang */
+#header {
+  width: 1200px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center; /* căn giữa theo chiều dọc */
+  justify-content: space-between; /* căn logo và nút 2 bên */
+  position: fixed; /* luôn trên đầu trang */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* canh giữa */
+  padding: 0 20px;
+  z-index: 1000; /* nổi trên tất cả */
+}
+
+/* Khối chứa input và nút */
+.btn_header {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input tìm kiếm */
+.btn_header .btn_1 {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(239, 235, 235, 0.825);
+  padding: 0 10px;
+}
+
+/* Nút đăng nhập/đăng ký */
+.btn_header .btn_2 {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 214, 10);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover cho nút và input */
+.btn_1:hover,
+.btn_2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Ảnh bunnuong phía dưới header */
+.bunnuong {
+  width: 1200px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+#main {
+  width: 1200px;
+  height: auto;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  top: -200px;
+}
+#more {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style từng item trong #more giống bosutap1 */
+#more div {
+  transition: transform 0.3s ease;
+}
+
+#more div:hover {
+  transform: scale(1.1);
+}
+
+/* Ảnh trong #more giống ảnh bosutap1 */
+#more img {
+  width: 270px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Chữ mô tả giống bosutap1 */
+#more h4 {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+#more b {
+  font-size: smaller;
+}
+.search-box {
+  position: relative;
+  width: 550px; /* bạn đổi kích thước tùy giao diện */
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px 10px 40px; /* chừa chỗ icon */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  outline: none;
+  transition: 0.15s ease;
+}
+
+.search-box input:focus {
+  background-color: #ffffff;
+  border-color: #4e8af7;
+  box-shadow: 0 0 0 3px rgba(78, 138, 247, 0.25); /* hiệu ứng giống BeFood */
+}
+
+.search-box input::placeholder {
+  color: #999;
+}
+.menu-btn {
+  background-color: #061a3a; /* xanh đậm giống hình */
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px; /* bo tròn kiểu pill */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.badge {
+  background-color: #d7e8ff; /* xanh nhạt */
+  color: #1a66ff; /* xanh dương đậm */
+  padding: 2px 10px;
+  font-size: 13px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+/* Menu */
+.menu-list {
+  width: 850px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Card món ăn */
+.food-card {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ảnh món ăn */
+.food-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Nội dung dưới */
+.food-info {
+  padding: 12px 14px;
+}
+
+.food-info h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.food-meta {
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.food-price {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ---------- GIỎ HÀNG BÊN PHẢI ---------- */
+
+.cart-box {
+  width: 320px;
+  height: fit-content;
+  padding: 25px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 20px;
+  text-align: center;
+}
+
+.cart-empty img {
+  width: 160px;
+  opacity: 0.7;
+}
+
+.cart-empty p {
+  margin-top: 10px;
+  color: #666;
+}
+/* Enmd menmu */
+.menu-cart-layout {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.menu-column {
+  flex: 3;
+}
+
+.cart-column {
+  flex: 1.5;
+}
+
+.cart-column h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e2b50;
+  position: relative;
+  position: sticky;
+}
+
+.cart-box {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cart-empty-icon {
+  width: 120px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.cart-empty-text {
+  color: #6e7b8a;
+  font-size: 16px;
+}
+#footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.ketnoi {
+  width: 50px;
+}
+#bosutap1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+#bosutap1 img {
+  width: 270px;
+}
+#bosutap1 div:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+#bosutap1 b {
+  font-size: smaller;
+}
+#footer div span {
+  display: block;        
+  margin: 6px 0;         
+  font-size: 18px;    
+      
+}
+
+/* GIỎ HÀNG: Sửa kích thước ảnh và thông tin */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;       /* khoảng cách giữa ảnh và thông tin */
+  margin-bottom: 8px;
+}
+
+.cart-item-img {
+  width: 80px;    /* giảm từ 120px xuống 40px */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart-item-info h4 {
+  margin: 0;
+  font-size: 12px;  /* nhỏ hơn */
+}
+
+.cart-item-info p {
+  margin: 2px 0;
+  font-size: 11px;  /* nhỏ hơn */
+}
+
+.remove-item {
+  margin-top: 3px;
+  padding: 2px 6px;
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  background-color: #4e8af7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;  /* nhỏ hơn */
+}
+
+.checkout-btn:hover {
+  background-color: #275bd8;
+}
+
+
+.restaurant-info {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.restaurant-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1e2b50;
+}
+
+.restaurant-info p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.restaurant-info .address {
+  font-weight: 500;
+}
+
+.restaurant-info .open-time {
+  color: #777;
+}
+
+.restaurant-info .rating {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.restaurant-info .info-link {
+  text-decoration: none;
+  color: #4e8af7;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.restaurant-info .info-link:hover {
+  text-decoration: underline;
+}

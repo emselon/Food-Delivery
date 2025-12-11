@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bunnuong.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <img class="bunnuong" src="/Ảnh/bunthitnuong.png" alt="" />
+
+      <div id="header">
+        <a href="/index.html"
+          ><div>
+            <img
+              style="width: 20%; margin-top: -30px"
+              src="/Ảnh/logo.png"
+              alt=""
+            /></div
+        ></a>
+
+        <div class="btn_header">
+          <input
+            class="btn_1"
+            type="text"
+            placeholder="  Tìm món ăn hoặc nhà hàng"
+          />
+
+          <a href="/login.html">
+            <button class="btn_2">Đăng nhập / Đăng kí</button>
+          </a>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="restaurant-info">
+          <h1>Bún Thịt Nướng Xuân Mai - Bún Mắm & Ăn Vặt - Chợ Bến Thành</h1>
+          <p class="address">
+            Sạp 1066/1090 Chợ Bến Thành, Lê Lợi, P. Bến Thành, Quận 1, TP. HCM
+          </p>
+          <p class="open-time">Mở cửa: 07:00 ngày 21/11</p>
+          <p class="rating">
+            ⭐ 4.3 (30 đánh giá) •
+            <a href="#" class="info-link">Thông tin quán</a>
+          </p>
+        </div>
+
+        <button
+          id="btnMore"
+          style="
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #4e8af7, #275bd8);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: 0.3s ease;
+          "
+          onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'"
+        >
+          Nhà hàng tương tự
+        </button>
+
+        <div id="more" style="display: none">
+          <div>
+            <img src="/Ảnh/chechuoinuong.png" alt="" />
+            <h4>
+              Chè Chuối Nướng Nước Cốt Dừa - Lê Thánh Tôn <br /><b
+                >165-167 Lê Thánh Tôn, Phường Bến Thành</b
+              >
+            </h4>
+          </div>
+          <div>
+            <img src="/Ảnh/comgaxoimo.png" alt="" />
+            <h4>
+              Cơm Gà Xối Mỡ Bao Béo - Lê Thánh Tôn <br /><b
+                >240/5A Lê Thánh Tôn, Phường Bến Thành</b
+              >
+            </h4>
+          </div>
+          <div>
+            <img src="/Ảnh/vitquay.png" alt="" />
+            <h4>
+              得福烧腊 Thịt Quay Đắc Phúc - Trương Định <br /><b
+                >4 Trương Định, Phường Bến Thành</b
+              >
+            </h4>
+          </div>
+          <div>
+            <img src="/Ảnh/coffe.png" alt="" />
+            <h4>
+              Maan + Coffee & Tea - Trương Định <br /><b
+                >10 Trương Định, Phường Bến Thành</b
+              >
+            </h4>
+          </div>
+          <div>
+            <img src="/Ảnh/nuocepduahau.png" alt="" />
+            <h4>
+              Louis Top Juice - Nước Ép - Trà & Sữa Hạt - Lê Thánh Tôn <br /><b
+                >252 Đường Lê Thánh Tôn, Phường Bến Thành</b
+              >
+            </h4>
+          </div>
+        </div>
+
+        <hr style="margin-top: 15px" />
+
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Tìm kiếm trong nhà hàng" />
+        </div>
+
+        <button style="margin-top: 30px" class="menu-btn">
+          MENU
+          <span class="badge">9</span>
+        </button>
+
+        <!-- ========== BẮT ĐẦU SỬA Ở ĐÂY ========== -->
+        <div class="menu-cart-layout">
+          <!-- Cột Menu -->
+          <div class="menu-column">
+            <div class="menu-list">
+              <div
+                class="food-card"
+                data-name="Bún mắm"
+                data-price="60000"
+                data-img="/Ảnh/bunchagio.png"
+              >
+                <img src="/Ảnh/bunchagio.png" alt="" />
+                <div class="food-info">
+                  <h3>Bún mắm</h3>
+                  <div class="food-meta">1 ❤️ • 100+ đã bán</div>
+                  <div class="food-price">60.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/bunchagio.png" alt="" />
+                <div class="food-info">
+                  <h3>Bún thịt nướng</h3>
+                  <div class="food-meta">10+ đã bán</div>
+                  <div class="food-price">50.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/chechuoinuong.png" alt="" />
+                <div class="food-info">
+                  <h3>Bún thịt nướng thập cẩm</h3>
+                  <div class="food-meta">2 đã bán</div>
+                  <div class="food-price">70.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/bunthitnuong.png" />
+                <div class="food-info">
+                  <h3>Bánh canh cua</h3>
+                  <div class="food-meta">3 đã bán</div>
+                  <div class="food-price">45.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/comgaxoimo.png" />
+                <div class="food-info">
+                  <h3>Cơm chiên hải sản</h3>
+                  <div class="food-meta">2 đã bán</div>
+                  <div class="food-price">55.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/comtam.png" />
+                <div class="food-info">
+                  <h3>Bánh canh giò heo</h3>
+                  <div class="food-meta">2 đã bán</div>
+                  <div class="food-price">50.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/comgaxoimo.png" />
+                <div class="food-info">
+                  <h3>Cơm gà xối mỡ</h3>
+                  <div class="food-meta">20+ đã bán</div>
+                  <div class="food-price">45.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/bunthitnuong.png" />
+                <div class="food-info">
+                  <h3>Phở bò</h3>
+                  <div class="food-meta">50+ đã bán</div>
+                  <div class="food-price">60.000đ</div>
+                </div>
+              </div>
+
+              <div class="food-card">
+                <img src="/Ảnh/banhmi.png" />
+                <div class="food-info">
+                  <h3>Hủ tiếu nam vang</h3>
+                  <div class="food-meta">5 đã bán</div>
+                  <div class="food-price">55.000đ</div>
+                </div>
+              </div>
+            </div>
+            <!-- menu-list -->
+          </div>
+          <!-- menu-column -->
+
+          <!-- Cột Giỏ hàng -->
+          <div class="cart-column">
+            <h2>Giỏ hàng của tôi</h2>
+            <div class="cart-box">
+              <img
+                src="https://i.imgur.com/xxl6sAi.png"
+                class="cart-empty-icon"
+              />
+              <p class="cart-empty-text">Giỏ hàng hiện đang trống</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <img style="width: 150px" src="/Ảnh/logofooter.png" alt="" />
+      <div id="footer">
+        <div>
+          <span>Về beefod</span>
+          <span>Tin tức</span><br />
+          <span>Đăng ký làm nhà hàng</span><br />
+          <span>Trở thành tài xế beefood</span>
+        </div>
+        <div>
+          <span>Hotline : 1900232345</span>
+          <span>Email:hotro@be.com.vn</span> <br />
+          <span>Câu hỏi thường gặp</span>
+        </div>
+        <div>
+          <div><span>Kết nối với chúng tôi</span></div>
+          <div style="display: flex">
+            <div><img class="ketnoi" src="/Ảnh/facebook.png" alt="" /></div>
+            <div><img class="ketnoi" src="/Ảnh/insta.png" alt="" /></div>
+            <div><img class="ketnoi" src="/Ảnh/youtube.png" alt="" /></div>
+          </div>
+        </div>
+        <div>
+          <span>Quét mã để tải ứng dụng</span>
+          <img src="/Ảnh/qrbe.png" alt="" />
+        </div>
+        <hr />
+      </div>
+      <hr />
+      <h3>CÔNG TY CỔ PHẦN BE GROUP</h3>
+      <div style="display: flex">
+        <div>
+          <span style="font-size: small"
+            >Giấy chứng nhận ĐKDN: 0108269207. Cấp lần đầu: 11/5/2018. Cơ quan
+            cấp: do Sở Kế Hoạch và Đầu tư Thành Phố Hà Nội. Đăng ký thay đổi lần
+            9: 08/09/2021. Cơ quan cấp: Sở Kế Hoạch và Đầu tư Thành Phố Hồ Chí
+            Minh. <br />
+            Giấy phép kinh doanh vận tải bằng xe ô tô cấp lần đầu: số 7942, ngày
+            01/11/2018; Cấp lần thứ 5: số 10352, ngày 07/06/2021 bởi Sở Giao
+            Thông Vận Tải Thành Phố Hồ Chí Minh. Địa chỉ trụ sở chính: Tầng 16,
+            Tòa Nhà Sai Gon Tower, 29 Lê Duẩn, Phường Sài Gòn, Thành phố Hồ Chí
+            Minh, Việt Nam. <br />
+            Đại diện công ty: Bà Vũ Hoàng Yến. Chức vụ: Tổng Giám Đốc.</span
+          >
+        </div>
+        <div><img src="/Ảnh/bôcngthuong.png" alt="" /></div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btnMore");
+      const more = document.getElementById("more");
+
+      btn.onclick = function () {
+        if (more.style.display === "none") {
+          more.style.display = "grid";
+          btn.textContent = "Thu gọn";
+        } else {
+          more.style.display = "none";
+          btn.textContent = "Nhà hàng tương tự";
+        }
+      };
+    </script>
+    <script src="/giohang.js"></script>
+  </body>
+</html>
