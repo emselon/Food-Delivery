@@ -1,0 +1,6 @@
+@Giao_đồ_ăn_HostAddress = http://localhost:5148
+
+GET {{Giao_đồ_ăn_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
