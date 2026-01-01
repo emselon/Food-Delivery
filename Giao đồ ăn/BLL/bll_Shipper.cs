@@ -21,5 +21,17 @@ namespace Giao_đồ_ăn.BLL
         {
             return _dal.GetAllShippers();
         }
+        public bool CreateShipper(dto_Shipper shipper)
+        {
+            return _dal.CreateShipper(shipper);
+        }
+        public bool XoaShipper(int id)
+        {
+            return _dal.DeleteShipper(id);
+        }
+        public bool UpdateShipper(dto_Shipper shipper)
+        {
+            return _dal.UpdateShipper(shipper);
+        }
     }
 }

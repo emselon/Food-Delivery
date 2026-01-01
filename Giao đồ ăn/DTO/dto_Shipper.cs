@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,14 +10,18 @@ namespace DTO
     {
         public int IdShipper { get; set; }
 
-        public string HoTen { get; set; } = null!;
+        [Required(ErrorMessage = "Họ tên không được để trống")]
+        public string HoTen { get; set; } = string.Empty;
 
-        public string? SoDienThoai { get; set; }
+        [Required(ErrorMessage = "Số điện thoại không được để trống")]
+        public string SoDienThoai { get; set; } = string.Empty;
 
-        public string? BienSoXe { get; set; }
+        [Required(ErrorMessage = "Biển số xe không được để trống")]
+        public string BienSoXe { get; set; } = string.Empty;
 
-        public bool? TrangThai { get; set; }
+        public bool TrangThai { get; set; } = true;
 
-        public DateTime? NgayTao { get; set; }
+        public DateTime NgayTao { get; set; } = DateTime.Now;
     }
+
 }

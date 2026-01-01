@@ -19,6 +19,12 @@ namespace Giao_đồ_ăn
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<ShipperDAL>();
             builder.Services.AddScoped<bll_Shipper>();
+            builder.Services.AddScoped<RestaurantDAL>();
+            builder.Services.AddScoped<bll_Restaurant>();
+            builder.Services.AddScoped<UserDAL>();
+            builder.Services.AddScoped<bll_User>();
+                
+
 
             var app = builder.Build();
 
